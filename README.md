@@ -5,11 +5,11 @@
 - Features
 - Installation
 - Usage
-- Code Examples
+  - Code Examples
 - API
 - Contributing
 - License
-- 
+
 # Features
 - Create fibers with unique names.
 - Add multiple fibers using vectors.
