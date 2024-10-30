@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="fiber">
+      <UniqueIdentifier>{ba3232e2-b400-41ba-96b4-43f5dbd04ce6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="fiber\manager">
+      <UniqueIdentifier>{0fb9bd3d-e3c8-4971-af8f-bb1026de25c5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="fiber\pool">
+      <UniqueIdentifier>{5d041e0f-c31a-424a-a623-5107a7e457f9}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="fiber\pool\pool.cpp">
+      <Filter>fiber\pool</Filter>
+    </ClCompile>
+    <ClCompile Include="fiber\manager\manager.cpp">
+      <Filter>fiber\manager</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="fiber\pool\pool.hpp">
+      <Filter>fiber\pool</Filter>
+    </ClInclude>
+    <ClInclude Include="fiber\manager\manager.hpp">
+      <Filter>fiber\manager</Filter>
+    </ClInclude>
+    <ClInclude Include="fiber\fiber.hpp">
+      <Filter>fiber</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="fiber\pool\README.md" />
+  </ItemGroup>
+</Project>
