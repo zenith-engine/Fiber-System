@@ -140,9 +140,6 @@
     <ClInclude Include="fiber\pool\pool.hpp" />
     <ClInclude Include="stdafx.hpp" />
   </ItemGroup>
-  <ItemGroup>
-    <None Include="fiber\pool\README.md" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
