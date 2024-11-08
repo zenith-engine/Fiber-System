@@ -9,6 +9,9 @@
 #include <optional>
 #include <windows.h>
 #include <minwindef.h>
+#include <queue>
+#include <condition_variable>
+#include <memory>
 
 #include <mutex>
 #include <stack>
