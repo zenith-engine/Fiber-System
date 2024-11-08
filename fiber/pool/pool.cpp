@@ -3,12 +3,12 @@
 namespace ve {
 	std::shared_ptr<fiber_pool> g_fiber_pool = std::make_shared<fiber_pool>();
 
-	fiber_pool::fiber_pool(std::uint32_t max_jobs, bool verbose)
-		: m_max_jobs(max_jobs), m_verbose(verbose) {}
+	fiber_pool::fiber_pool(std::uint32_t max_jobs)
+		: m_max_jobs(max_jobs) {}
 
 	void fiber_pool::initialize(std::uint32_t pool_size) {
 		std::lock_guard<std::mutex> lock(m_mutex);
-		auto* manager = get_fiber_manager();
+		auto manager = get_fiber_manager();
 
 		if (!manager) {
 			throw std::runtime_error("Fiber manager not initialized.");
@@ -79,7 +79,7 @@ namespace ve {
 
 	void fiber_pool::resize(std::uint32_t new_size) {
 		std::lock_guard<std::mutex> lock(m_mutex);
-		auto* manager = get_fiber_manager();
+		auto manager = get_fiber_manager();
 
 		if (!manager) {
 			throw std::runtime_error("Fiber manager not initialized.");

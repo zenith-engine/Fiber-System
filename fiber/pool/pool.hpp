@@ -24,7 +24,7 @@ namespace ve {
 			std::size_t active_fibers;
 		};
 
-		explicit fiber_pool(std::uint32_t max_jobs = 1000, bool verbose = true);
+		explicit fiber_pool(std::uint32_t max_jobs = 1000);
 
 		void initialize(std::uint32_t pool_size);
 
