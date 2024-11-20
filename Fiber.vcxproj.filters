@@ -32,7 +32,4 @@
     </ClInclude>
     <ClInclude Include="stdafx.hpp" />
   </ItemGroup>
-  <ItemGroup>
-    <None Include="fiber\pool\README.md" />
-  </ItemGroup>
 </Project>
